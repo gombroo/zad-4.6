@@ -15,6 +15,7 @@ $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 800;
 
+$transition: all 1s ease-in-out;
 
 /* Global */
 
@@ -37,9 +38,30 @@ body {
 }
 
 section {
-  padding: 0 50px;
+  padding: 50px 72px;
 }
 
+.btn {
+    min-width: 230px;
+    margin: 24px auto 0 auto;
+    cursor: pointer;
+    border: 2px solid $color-three;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: $color-three;
+    font-weight: $font-semibold;
+    letter-spacing: .5px;
+    font-size: 1.1em;
+    color: $color-two;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        background-color: $color-one;
+        border: 2px solid $color-one;
+        color: $color-four;
+    }
+}
 
 /* Navigation */
 
@@ -66,7 +88,7 @@ section {
               text-transform: uppercase;
               letter-spacing: 0.5px;
               text-decoration: none;
-              font-weight: $font-semibold;
+              font-weight: $font-bold;
               color: $color-two;
             }
           }
@@ -111,5 +133,55 @@ section {
       color: $color-two;
     }
   }
+}
 
+
+/* Services */
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 3.3em;
+  font-weight: $font-bold;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: $font-subtitle;
+  font-weight: $font-regular;
+  font-size: 1.5em;
+  color: $color-four;
+  line-height: 1;
+  margin-top: .5em;
+  text-align: center;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .services-item {
+    flex: 0 0 33.33333%;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+
+    .icon {
+      font-size: 50px;
+      color: $color-three;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      border: 5px solid $color-three;
+    }
+
+    .description {
+      font-size: 1.1em;
+    }
+  }
 }

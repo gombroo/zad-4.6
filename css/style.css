@@ -19,7 +19,29 @@ body {
 }
 
 section {
-  padding: 0 50px;
+  padding: 50px 72px;
+}
+
+.btn {
+  min-width: 230px;
+  margin: 24px auto 0 auto;
+  cursor: pointer;
+  border: 2px solid #ffcc1f;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #ffcc1f;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: 1.1em;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #191919;
+  border: 2px solid #191919;
+  color: #b5b5b5;
 }
 
 /* Navigation */
@@ -53,7 +75,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
   color: #fff;
 }
 
@@ -91,5 +113,61 @@ section {
   font-weight: 800;
   line-height: 1;
   color: #fff;
+}
+
+/* Services */
+.section-title {
+  text-transform: uppercase;
+  font-size: 3.3em;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #b5b5b5;
+  line-height: 1;
+  margin-top: .5em;
+  text-align: center;
+}
+
+.services-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.services-wrapper .services-item {
+  -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+  text-align: center;
+  padding: 10px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 20px 0;
+}
+
+.services-wrapper .services-item .icon {
+  font-size: 50px;
+  color: #ffcc1f;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 5px solid #ffcc1f;
+}
+
+.services-wrapper .services-item .description {
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=style.css.map */
