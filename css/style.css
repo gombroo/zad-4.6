@@ -86,16 +86,26 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  position: relative;
+  /*position: relative;*/
 }
 
 .hero .hero-inner {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /*position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
   text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .hero .hero-inner .page-title {
@@ -169,5 +179,38 @@ section {
 
 .services-wrapper .services-item .description {
   font-size: 1.1em;
+}
+
+/* Portfolio */
+.portfolio {
+  background: #f3f3f3;
+  margin: 0 100px;
+}
+
+.portfolio .portfolio-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio .portfolio-wrapper .photo {
+  -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+  height: 300px;
+}
+
+.portfolio .portfolio-wrapper .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .portfolio-wrapper .photo .badge {
+  background: #fff;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
