@@ -235,3 +235,36 @@ section {
         }
     }
 }
+
+
+/* Footer */
+
+.page-footer {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        li {
+            background-color: $color-three;
+            list-style: none;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            a {
+                font-size: 0;
+
+                i {
+                    font-size: 30px;
+                    color: $color-one;
+                }
+            }
+        }
+    }
+}
