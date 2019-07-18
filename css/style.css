@@ -33,7 +33,7 @@ section {
   font-weight: 600;
   letter-spacing: .5px;
   font-size: 1.1em;
-  color: #fff;
+  color: #191919;
   text-transform: uppercase;
   transition: all 1s ease-in-out;
 }
@@ -60,6 +60,10 @@ section {
   line-height: 1;
   color: #fff;
   margin: 0.35em;
+}
+
+.overlay {
+  z-index: 1;
 }
 
 /* Navigation */
@@ -105,7 +109,18 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  /*position: relative;*/
+  position: relative;
+  /* for overlay */
+}
+
+.hero:before {
+  content: '';
+  background-color: #191919;
+  opacity: 0.55;
+  position: absolute;
+  /* for overlay */
+  width: 100%;
+  height: 100%;
 }
 
 .hero .hero-column {
@@ -228,6 +243,17 @@ section {
   margin-top: 0px;
   text-align: center;
   padding: 5px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .badge-title {
+  font-size: 1.4em;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .badge-descritpion {
+  font-size: 1.1em;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #b5b5b5;
 }
 
 /* Footer */
