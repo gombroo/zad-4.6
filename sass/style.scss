@@ -43,6 +43,26 @@ section {
     padding: 50px 72px;
 }
 
+h1	{
+    margin: 0.2em 0;
+}
+
+h2 {
+    margin: 0.4em 0;
+}
+
+h3 {
+    margin: 0.6em 0;
+}
+
+h4 {
+    margin: 0.7em 0;
+}
+
+h5 {
+    margin: 0.8em 0;
+}
+
 .btn {
     min-width: 230px;
     margin: 24px auto 0 auto;
@@ -151,7 +171,9 @@ section {
         justify-content: center;
 
         .hero-inner {
-            /*position: absolute;
+            /* this code + relative for .hero =
+            /* 2nd method for centering header section
+            position: absolute;
             width: 100%;
             top: 50%;
             left: 50%;
@@ -174,7 +196,6 @@ section {
     font-size: 3.3em;
     font-weight: $font-bold;
     line-height: 1;
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -184,7 +205,6 @@ section {
     font-size: 1.5em;
     color: $color-four;
     line-height: 1;
-    margin-top: .5em;
     text-align: center;
 }
 
@@ -230,7 +250,7 @@ section {
 
         .portfolio-item {
             flex: 0 0 33.33333%;
-            /*height: 300px;*/
+            /*height: 300px; - don't use fixed values */
             padding: 30px;
 
             .photo {
