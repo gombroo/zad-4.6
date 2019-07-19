@@ -60,7 +60,7 @@ h4 {
 }
 
 h5 {
-    margin: 0.8em 0;
+    margin: 0.9em 0;
 }
 
 .btn {
@@ -269,6 +269,7 @@ h5 {
 
                 &-title {
                     font-size: 1.4em;
+                    margin-bottom: 0;
                 }
 
                 &-descritpion {
@@ -276,6 +277,7 @@ h5 {
                     font-family: $font-subtitle;
                     font-weight: $font-regular;
                     color: $color-four;
+                    margin-top: 0;
                 }
             }
         }

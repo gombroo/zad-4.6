@@ -39,7 +39,7 @@ h4 {
 }
 
 h5 {
-  margin: 0.8em 0;
+  margin: 0.9em 0;
 }
 
 .btn {
@@ -267,6 +267,7 @@ h5 {
 
 .portfolio .portfolio-wrapper .portfolio-item .badge-title {
   font-size: 1.4em;
+  margin-bottom: 0;
 }
 
 .portfolio .portfolio-wrapper .portfolio-item .badge-descritpion {
@@ -274,6 +275,7 @@ h5 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #b5b5b5;
+  margin-top: 0;
 }
 
 /* Footer */
