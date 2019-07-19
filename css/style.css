@@ -251,6 +251,10 @@ h5 {
   padding: 30px;
 }
 
+.portfolio .portfolio-wrapper .portfolio-item .photo {
+  margin-bottom: -8px;
+}
+
 .portfolio .portfolio-wrapper .portfolio-item .photo img {
   width: 100%;
   height: 100%;
