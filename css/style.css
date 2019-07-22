@@ -252,7 +252,7 @@ h5 {
 }
 
 .portfolio .portfolio-wrapper .portfolio-item .photo {
-  margin-bottom: -8px;
+  /* margin-bottom: -8px;*/
 }
 
 .portfolio .portfolio-wrapper .portfolio-item .photo img {
@@ -260,6 +260,8 @@ h5 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  /* for reseting browser default margins */
 }
 
 .portfolio .portfolio-wrapper .portfolio-item .badge {
